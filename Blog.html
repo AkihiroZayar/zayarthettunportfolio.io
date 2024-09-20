@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zayar Thet Tun</title>
+  <!-- favicon -->
+  <link rel="icon" class="fav" type="image/x-icon" href="img/logo.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Custom font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Oswald', sans-serif;
+      background-color: #f5f5dc; /* softer, more modern background */
+    }
+
+    /* Video Background */
+    #video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1000;
+    }
+
+    /* Content Styling */
+    #content {
+      position: relative;
+      z-index: 1000;
+      text-align: center;
+      padding: 50px;
+      color: #1c1c1c; /* Dark grey for clean text contrast */
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      /* background-color: rgba(30, 30, 60, 0.85); Dark blue transparent background for the navbar */
+      background-color: rgba(255, 255, 255, 0.85); /* Dark blue transparent background for the navbar */
+    }
+
+    .nav-link {
+      color: #000000; /* White text for readability */
+    }
+
+    .nav-link:hover {
+      color: #000000; /* Bold red for hover effect */
+    }
+
+    /* Button Styling */
+    .btn-dark {
+      background-color: #1f4068; /* Deep blue button color */
+      border: none;
+      color: #ffffff; /* White text on buttons */
+    }
+
+    .btn-dark:hover {
+      background-color: #162447; /* Darker blue on hover */
+    }
+
+    /* Card Titles and Text */
+    .card-title {
+      color: #e63946; /* Bold red for card titles */
+    }
+
+    .card-text {
+      color: #333333; /* Dark grey for body text */
+    }
+
+    /* Modals */
+    .modal-content {
+      background-color: rgb(0, 0, 0); /* White modal background */
+      color: #ffffff; /* Dark text inside modals for clarity */
+    }
+
+    .modal-header {
+      background-color: #1f4068; /* Deep blue modal header */
+      color: white; /* White text for contrast */
+    }
+
+    .btn-close {
+      color: #fff; /* White close button */
+    }
+
+    .modal-footer {
+      background-color: rgba(30, 30, 60, 0.85); /* Dark blue footer for modals */
+    }
+</style>
+
+
+  
+  
+</head>
+
+<body >
+
+  <!-- navbar -->
+  <nav class="navbar navbar-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Bootstrap" width="40" height="40">
+      </a>
+      <div class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AboutMe.html"><i class="fas fa-id-card"></i> About Me</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="JLC.html"><i class="fas fa-graduation-cap"></i> Japanese Language School</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="Blog.html"
+              ><i class="fas fa-blog"></i> Blog</a
+            >
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="far fa-envelope"></i> Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="More.html"><i class="fas fa-info-circle"></i> More</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end -->
+
+<!-- video background -->
+  <video autoplay muted loop id="video-background">
+    <source src="img/blog background.mp4" type="video/mp4" />
+    Your browser does not support the video tag
+  </video>
+
+  
+
+  <!-- News feeds -->
+
+   <div class="container">
+    
+  <!-- title -->
+    <h1 class="text-dark">Welcome to My Blog</h1>
+    <p style="color: rgba(0, 0, 0, 0.788); margin-left: 20px;">
+In this blog, I share my thoughts, dreams, and opinions on various topics that inspire and drive me. This space serves as a personal diary where I reflect on my experiences, explore new ideas, and delve into the subjects that captivate me. Whether it’s pondering future aspirations, analyzing current trends, or simply expressing my unique perspective, I invite you to join me on this journey of discovery and self-expression.
+    </p>
+    <!-- title end -->
+  
+
+<!-- card & modal -->
+<div class="row py-4">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <!-- card 1 -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">Zayar: The Handsome Guy Next Door</h5>
+          <p class="card-text text-dark">Zayar is a handsome guy who effortlessly captures attention wherever he goes. With his charming smile and confident demeanor, he exudes a magnetic charisma that draws people in...</p>
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card1">
+  <i class="fab fa-readme"></i> Read More
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="card1" tabindex="-1" aria-labelledby="card1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="card1">zayar: The Handsome Guy Next Door</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Zayar is a handsome guy who effortlessly captures attention wherever he goes. With his charming smile and confident demeanor, he exudes a magnetic charisma that draws people in. His striking features, complemented by his impeccable sense of style, make him a favorite among friends and acquaintances alike. Beyond his looks, Zayar's kindness and wit add depth to his personality, making him not just attractive, but also someone everyone enjoys being around.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">Any Girl Can Apply to Be Zayar's Girlfriend</h5>
+          <p class="card-text text-dark">Any girl would be lucky to be Zayar's girlfriend, as his charm and good looks are only the beginning. Zayar is not just about appearances; he is genuinely caring, int...</p>
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card2">
+  <i class="fab fa-readme"></i> Read More
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="card2" tabindex="-1" aria-labelledby="card2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="card2"><h1 class="">Any Girl Can Apply to Be Zayar's Girlfriend</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Any girl would be lucky to be Zayar's girlfriend, as his charm and good looks are only the beginning. Zayar is not just about appearances; he is genuinely caring, intelligent, and has a great sense of humor. His easygoing nature and respectful attitude make him an ideal partner. He values honesty and kindness, and he appreciates someone who can share in his interests and passions. While many admire him from afar, Zayar is looking for someone special who can connect with him on a deeper level and build a meaningful relationship.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">The Beauty of the Japanese Language</h5>
+          <p class="card-text text-dark">The Japanese language is a fascinating blend of tradition and modernity, embodying the rich cultural heritage of Japan. Its unique script, consisting of Hiragana, Katakana...</p>
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card3">
+  <i class="fab fa-readme"></i> Read More
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="card3" tabindex="-1" aria-labelledby="card3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="card3" >The Beauty of the Japanese Language</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        The Japanese language is a fascinating blend of tradition and modernity, embodying the rich cultural heritage of Japan. Its unique script, consisting of Hiragana, Katakana, and Kanji, offers a glimpse into the country's history and evolution. Japanese is known for its intricate system of politeness and respect, with different forms of speech used depending on the social context. This complexity adds to its charm, making it both a challenge and a delight for learners. Whether through the poetic Haiku, the rhythmic flow of spoken dialogue, or the precise strokes of calligraphy, the Japanese language captivates and inspires those who study it, offering a deeper understanding of Japan's cultural and artistic essence.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 4 -->
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">The World of Web Development</h5>
+          <p class="card-text text-dark">Web development involves creating and maintaining websites, combining technical skills and creativity. It encompasses front-end development, which focuses on user...</p>
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card4">
+  <i class="fab fa-readme"></i> Read More
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="card4" tabindex="-1" aria-labelledby="card4" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="card4">The World of Web Development</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Web development involves creating and maintaining websites, combining technical skills and creativity. It encompasses front-end development, which focuses on user interfaces and experiences, and back-end development, dealing with server-side logic and databases. Web developers use languages like HTML, CSS, and JavaScript, and frameworks such as React and Node.js. They ensure websites are responsive, user-friendly, and efficient. Continuous learning and adapting to new technologies are crucial in this ever-evolving field.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 5 -->
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">My Journey in Learning Japanese</h5>
+          <p class="card-text text-dark">I've been studying Japanese since 2020 and have made significant progress over the years. In July 2022, I passed the JLPT N4, followed by the JLPT N3 in December 2022...</p>
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card5">
+  <i class="fab fa-readme"></i> Read More
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="card5" tabindex="-1" aria-labelledby="card5" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="card5">My Journey in Learning Japanese</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        I've been studying Japanese since 2020 and have made significant progress over the years. In July 2022, I passed the JLPT N4, followed by the JLPT N3 in December 2022. In July 2023, I successfully passed the JLPT N2, and by July 2024, I achieved the highest level, JLPT N1. My love for Japan is the driving force behind my dedication to learning the language. The culture, history, and people of Japan fascinate me, and mastering Japanese has allowed me to immerse myself more deeply in these aspects. Currently, I am studying advanced Japanese and working as a freelance Japanese teacher, sharing my passion and knowledge with others. Through teaching, I aim to inspire my students and help them appreciate the beauty and complexity of the Japanese language and culture.
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 6 -->
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">My Journey in Web Development</h5>
+          <p class="card-text text-dark">I have been studying web development and recently graduated from Parami International University. I also had the opportunity to learn at Sky Global....</p>
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card6">
+  <i class="fab fa-readme"></i> Read More
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="card6" tabindex="-1" aria-labelledby="card6" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="card6">My Journey in Web Development</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        I have been studying web development and recently graduated from Parami International University. I also had the opportunity to learn at Sky Global, which greatly expanded my practical skills and industry knowledge. Additionally, I passed the Information Technology Passport Exam, an important certification that validated my foundational IT skills. Starting from the basics, I worked my way through various levels of web development, gradually building a strong skill set. Currently, I am focused on studying professional web development, where I am diving into advanced techniques, including modern frameworks, full-stack development, and best practices for building scalable, efficient, and visually appealing websites. This journey not only enhances my technical expertise but also fuels my passion for creating innovative web solutions and staying ahead in the ever-evolving tech landscape.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 7 -->
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">coming soon</h5>
+          <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate magni natus dolorem velit a recusandae est doloribus facere in, aliquid repudiandae ea nihil magnam eum. Perspiciatis ipsam tempora odio ....</p>
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card7">
+  <i class="fab fa-readme"></i> Read More
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="card7" tabindex="-1" aria-labelledby="card7" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="card7">Coming soon</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Coming soon
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 8 -->
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-dark">coming soon</h5>
+          <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate magni natus dolorem velit a recusandae est doloribus facere in, aliquid repudiandae ea nihil magnam eum. Perspiciatis ipsam tempora odio ....</p>
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#card8">
+  <i class="fab fa-readme"></i> Read More
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="card8" tabindex="-1" aria-labelledby="card8" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="card8">Coming soon</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Coming soon
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+   </div>
+<!-- card & modal end -->
+   
+      
+  
+   
+<!-- footer -->
+   <footer class="text-center py-4 text-dark">
+    &copy; Copyright 2024 by Zayar Thet Tun
+   </footer>
+  
+
+    
+</body>
+</html>
